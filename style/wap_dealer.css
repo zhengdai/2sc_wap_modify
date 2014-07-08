@@ -1,0 +1,273 @@
+body{padding-top:82px; }
+
+/*所在位置样式*/
+.position{ padding:0 10px; line-height: 30px;color: #999; border-bottom: 1px solid #999;}
+.position a{font-size:12px; padding: 0 5px 0 0; color: #999;}
+
+/*商家介绍样式*/
+.shopHead{ line-height: 40px; font-size: 16px; border-bottom: 6px solid #ff4400; padding: 0 15px; overflow: hidden;}
+.shopName{ float: left; width: 75%; overflow: hidden; height: 40px;}
+.shopHead p{display:block;float: left; width: 25%; overflow: hidden; height: 40px; text-align: center;}
+.shopBrand{ font-size:12px; color: #fff; padding:3px 10px; background-color: #0965b2; border-radius: 6px;}
+
+
+#shopContent{ margin: 5px 0; overflow: hidden;}
+.shop-con1{ overflow: hidden; position: relative;}
+.shop-con1-left{ margin: 0 120px 0 0;}
+.shop-con1-right{ position: absolute; top: 0; right: 5px; width: 110px; overflow: hidden;}
+.shop-item{ padding: 0 5px; line-height: 28px; border-bottom: 1px solid #e6e6e6; overflow: hidden; font-size: 12px; position: relative;}
+.shop-address{ padding: 0 5px; line-height: 28px; border-bottom: 1px solid #e6e6e6; overflow: hidden; font-size: 12px; position: relative; height:56px;}
+.shop-item-left{  color: #999999; }
+.shop-item-right{ margin-right: 5px; color:#000; }
+.shop-item-right span{ margin: 0 3px; background-color: #28960f; padding: 3px 5px; color: #fff;}
+i.red{ color: #ff4400; font-style: normal;}
+
+.shop-share{ color:#ff4400; text-align: center; display: block;}
+.report{color: #999; position: absolute; right:5px; top:0;}
+.report i{ background-color: #ff4400; color: #fff; padding: 0 5px; margin: 0 3px; font-style: normal;}
+.shop-pic{ width: 110px; height: 90px; overflow: hidden; position: relative; display: block;}
+.shop-pic img{ width: 100%; height: 100%;}
+.shop-pic h4{ position: absolute; width: 100%; left: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5); text-align: center; color: #fff;}
+.shop-represent{ overflow: hidden;}
+.shop-represent-left{width: 60px; float: left; color: #999;}
+.shop-represent-left h4{ font-size: 14px; line-height: 30px; font-weight: bold;}
+.shop-represent-left p{ font-size: 12px; line-height: 20px; font-weight: normal;}
+.shop-represent-right{width: 50px; float: right;}
+.shop-represent-right img{ width: 100%; height: auto;}
+.shop-tel{ text-align: center; display: block; line-height: 30px; color: #fff; background-color: #ff4400; margin: 5px auto;}
+
+/*促销活动样式*/
+.first-ac{ margin: 10px 5px 5px; border-bottom: 1px solid #d9d9d9;}
+.ac-title{ line-height: 30px; height: 30px; overflow: hidden;}
+.ac-time, .ac-content{ line-height: 24px; font-size: 12px; color: #999;}
+.ac-list{ overflow: hidden; margin:0 5px 10px;}
+.ac-item{ line-height: 30px; color: #999; height: 30px; border-bottom: 1px dotted #d9d9d9; overflow: hidden;}
+.ac-item-tit{ display: block; float: left; width: 75%; overflow: hidden; height: 100%;}
+.ac-item-date{display: block; float: left; width: 25%; overflow: hidden; height: 100%; text-align: center;}
+
+/*公司简介*/
+.intro-content{ margin: 5px 5px 10px;}
+.intro-content p{ font-size: 12px; color: #999; line-height: 24px;}
+
+/*车源tab样式*/
+#shop-cars{ overflow: hidden;}
+#shop-cars .ui-tabs {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+#shop-cars .ui-tabs-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 11;
+    position: relative;
+}
+#shop-cars .ui-tabs-content {
+    position: relative;
+    min-height: 100px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    overflow: hidden;
+    -webkit-transition: height 200ms ease-in-out;
+    -moz-transition: height 200ms ease-in-out;
+    -o-transition: height 200ms ease-in-out;
+    transition: height 200ms ease-in-out;
+}
+#shop-cars .ui-tabs-content .ui-tabs-panel {
+    visibility: hidden;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    min-height: 100px;
+}
+#shop-cars .ui-tabs-panel {
+    -webkit-transform: translateZ(0);
+    -moz-transform:translateZ(0);
+    -o-transform:translateZ(0);
+    transform:translateZ(0);
+}
+#shop-cars .ui-tabs-content .ui-tabs-panel.ui-state-active,.history-tabs .ui-viewport-transitioning .ui-tabs-panel.out {
+    visibility: inherit;
+    z-index: 1;
+}
+#shop-cars .ui-tabs-content .ui-tabs-panel.ui-state-active {
+    z-index: 2;
+}
+#shop-cars .ui-tabs-nav li {
+    margin-bottom:3px;
+    border: solid #d4d4d4;
+    border-width: 0 0 4px 1px;
+    float:left;
+    width: 50%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    text-align: center;
+    color: #4a4a4a;
+    font-size: 16px;
+    background-color: #f4f4f4;
+    height: 39px;
+    line-height: 35px;
+    white-space:nowrap;/*内容不换行*/
+    cursor: pointer;
+
+}
+#shop-cars .ui-tabs-nav li a {
+    text-decoration: none;
+    color: #4a4a4a;
+
+}
+#shop-cars .ui-tabs-nav li.ui-state-active a{
+    color: #000;
+    font-weight: bold;
+}
+#shop-cars .ui-tabs-nav li:last-child {
+    border-right-width: 1px;
+}
+#shop-cars .ui-tabs-nav li.ui-state-active{
+    border-bottom:4px #f00 solid;
+    height: 39px;
+}
+.cars-nav{ border-top: 3px solid #000; overflow: hidden; }
+
+#shop-cars .tab-car .ui-tabs-content {
+    position: relative;
+    min-height: 100px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    overflow: hidden;
+    -webkit-transition: height 200ms ease-in-out;
+}
+#shop-cars .tab-car .ui-tabs-content .ui-tabs-panel {
+    display: none;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    min-height: 100px;
+}
+#shop-cars .tab-car .ui-tabs-panel {
+    -webkit-transform: translateZ(0);
+}
+#shop-cars .tab-car .ui-tabs-content .ui-tabs-panel.ui-state-active, .ui-viewport-transitioning .ui-tabs-panel.out {
+    display: block;
+    z-index: 1;
+}
+#shop-cars .tab-car .ui-tabs-content .ui-tabs-panel.ui-state-active {
+    z-index: 2;
+}
+
+#shop-cars .tab-car .ui-tabs-nav {
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 236px;
+    float: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 5px;
+}
+#shop-cars .tab-car .ui-tabs-nav li {
+    margin-top:0;
+    border:none;
+    border-width: 0;
+    float:left;
+    padding: 0 5px;
+    width: auto;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    text-align: center;
+    color: #4a4a4a;
+    font-size: 14px;
+    background-color: #f4f4f4;
+    height: 24px;
+    line-height: 24px;
+    white-space:nowrap;/*内容不换行*/
+    cursor: pointer;
+
+}
+#shop-cars .tab-car .ui-tabs-nav li a {
+    text-decoration: none;
+    color: #4a4a4a;
+
+}
+#shop-cars .tab-car .ui-tabs-nav li:last-child {
+    border-right-width: 0;
+}
+#shop-cars .tab-car .ui-tabs-nav li.ui-state-active{
+    background-color: #f40;
+    border-bottom: none;
+    margin-top: 0;
+}
+#shop-cars .tab-car .ui-tabs-nav li.ui-state-active a{
+    color: #fff;
+    font-weight: normal;
+}
+#shop-cars .tab-car .ui-tabs-content {
+    border: none;
+}
+#shop-cars .tab-car .ui-tabs-content .ui-tabs-panel {
+    padding: 0 5px;
+    border-top:1px #d4d4d4 solid;
+}
+#shop-cars .tab-car .ui-tabs-content .ui-tabs-panel li{
+    line-height: 30px;
+    border-bottom:1px #d4d4d4 solid;
+    overflow: hidden;
+}
+#shop-cars .tab-car .ui-tabs-content .ui-tabs-panel li.lastItem{
+    border-bottom: none;
+}
+
+#shop-cars .tab-car .ui-tabs-panel .ui-loading {
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+#shop-cars .tab-car .ui-tabs-panel .ui-load-error {
+    color: red;
+    text-align: center;
+}
+
+.car-item{ overflow: hidden; padding: 10px; border-bottom: 1px #c2c2c2 dotted; position: relative;}
+.car-item a{ display: block;overflow: hidden; position: relative;}
+.car-tit{font-size:18px; line-height: 30px; margin-right: 20px; height: 30px; overflow: hidden; color: #666; display: block;}
+.authentication{ position: absolute; top:15px; font-size: 12px; line-height: 20px;
+    background-color: #24ccb3; right: 10px; padding: 0 3px; border-radius: 6px; color: #fff;
+}
+.description{ position: relative; overflow: hidden; margin: 5px 0;}
+.left-des{ margin-right:80px; border-right:1px solid #999; }
+.promise{ font-size:14px; color: #ff926a; line-height: 28px; height: 28px; overflow: hidden;}
+.car-info{font-size:16px; color: #999; line-height: 28px; height: 28px; overflow: hidden;}
+.right-des{ position: absolute; top:0; right: 0; width: 75px; overflow: hidden;}
+.car-price{font-size:18px; color: #ff0000; line-height: 28px; height: 28px; overflow: hidden;}
+.release-date{font-size:16px; color: #999; line-height: 28px; height: 28px; overflow: hidden;}
+
+.see-more{ margin: 10px auto; text-align: center; border: 1px solid #999; width: 100px; line-height: 30px;}
+
+/*地图样式*/
+#shop-address{ background-color: #f7f7f7;}
+#shop-address .head{ position: relative;border-bottom:1px solid #b5b5b5;}
+#shop-map{width: 100%; height: 300px; display: none;}
+.readmore{ position: absolute; right: 10px; top: 0; height: 100%; width: 15px;
+    background-position: center; background-repeat: no-repeat;background-image: url("../images/small_r_arr.png");
+}
+.closemore{ background-image: url("../images/small_d_arr.png");}
+
+/*提示样式*/
+.tip{ padding: 0 0 0 20px; margin: 10px 5px; line-height: 24px; color: #ff4400; font-size: 14px;
+    background: url("../images/tip.png") left 3px no-repeat;
+}
+
+.jiathis_style_24x24{ margin: 3px 5px; overflow: hidden;}
+.jiathis_style_24x24 a{ margin: 5px 15%; display: block; float: left;}

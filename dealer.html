@@ -1,0 +1,360 @@
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="gbk">
+        <title>搜狐二手车商家</title>
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta content="telephone=no" name="format-detection">
+        <link type="text/css" rel="stylesheet" href="style/common.css"/>
+        <link type="text/css" rel="stylesheet" href="style/wap_dealer.css"/>
+        <script type="text/javascript" src="gmu.mearge.js"></script>
+        <script type="text/javascript" src="http://api.go2map.com/maps/js/api_v2.0.js"></script>
+        <script type="text/javascript" src="wap_dealer.js"></script>
+    </head>
+    <body>
+        <!--页面顶端引用开始-->
+        
+        
+        
+        		
+
+
+
+
+
+
+
+
+
+<!--页面顶端碎片引用开始-->
+<div id="page-head">
+    <header>
+        <span class="logo"></span>
+        <a id="city" href="/jsp/wap/city.jsp">北京</a>
+        <div class="icons">
+            <a class="icon" id="home" href="/"></a>
+            <a class="icon" id="history"></a>
+            <a class="icon" id="search"></a>
+            <a class="icon" id="sellCar" href="/sell/add"></a>
+        </div>
+    </header>
+    <!--导航-->
+    <div id="nav_wrap">
+        <div id="nav">
+            <ul>
+                <li ><a href="http://m.2sc.sohu.com/bj/">首页</a></li>
+                <li class="ui-state-active"><a href="http://m.2sc.sohu.com/bj/buycar/">买车</a></li>
+                <li ><a href="http://m.2sc.sohu.com/bj/sell/add">卖车</a></li>
+                <li ><a href="http://m.2sc.sohu.com/bj/evaluation/">估车宝</a></li>
+                <li ><a href="#">认证车</a></li>
+                <li ><a href="#">买车2</a></li>
+                <li ><a href="#">卖车2</a></li>
+                <li ><a href="#">估车宝2</a></li>
+                <li ><a href="#">认证车2</a></li>
+                <li ><a href="#">赢在二手车</a></li>
+                <li ><a href="#">买卖攻略</a></li>
+                <li ><a href="#">教育</a></li>
+                <li ><a href="#">财经</a></li>
+                <li ><a href="#">房产</a></li>
+                <li ><a href="#">汽车</a></li>
+            </ul>
+        </div>
+        <a id="nav_arrow"><span>&gt;</span></a>
+    </div>
+</div>
+<!--搜索框-->
+        <div class="search-wrap">
+            <div class="search-box">
+                <div id="search-con">
+                    <p class="input-box">
+                        <input id="search-key" name="suggest" type="text" class="search-text" placeholder="请输入车型名称" autocomplete="off">
+                    </p>
+                    <a href="javascript:void(0);" class="search-btn" onclick="wapSearchSubmit();">搜索</a>
+                </div>
+                <div id="rsearch" style="display:none;" class="search-popdiv">
+                <ul>
+                </ul>
+            </div>
+                <div class="search-tips">
+                    <a target="_blank" href="">奥迪A6L</a>
+                    <a target="_blank" href="">宝马3系</a>
+                    <a target="_blank" href="">帕萨特</a>
+                    <a target="_blank" href="">POLO</a>
+                    <a target="_blank" href="">奥迪A4L</a>
+                </div>
+            </div>
+            <span class="search-ui-arrow"></span>
+        </div>
+
+        <!--历史框-->
+        <div class="history-wrap">
+            <div class="history-tabs">
+                <ul class="tabs-nav">
+                    <li><a href="#collect-record-wrap">收藏记录</a></li>
+                    <li><a href="#browsing-record-wrap">浏览记录</a></li>
+                </ul>
+                <span id="clearBtn"></span>
+                <span id="closeBtn"></span>
+                <div class="clear"></div>
+                <div id="collect-record-wrap">
+                    <div id="collect-record">
+                    	 <ul id="collect-record-list">
+                             <li>
+                                 <span class="record-tit">[车源]</span><a class="carItem" href=""></a><span class="carPrice"><i></i>万</span><span class="deleteBtn"></span>
+                             </li>
+                             <li>
+                                 <span class="record-tit">[商家]</span><a class="shopItem" href=""></a><span class="deleteBtn"></span>
+                             </li>
+                         </ul>
+                    </div>
+                </div>
+                <div id="browsing-record-wrap">
+                    <div id="browsing-record">
+                        <ul id="browsing-record-list">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <span class="history-ui-arrow"></span>
+        </div>
+<script type="text/javascript">
+var pp = 'bj';
+var cc = '';
+</script>        
+<script type="text/javascript" src="http://m1.auto.itc.cn/car/theme/2sc/new_wap/js/wap_search.js"></script>     
+<!-- <script type="text/javascript" src="http://127.0.0.1:8080/usedcarweb/js/wap_search.js"></script> -->
+        	
+		<!--页面顶端引用结束-->
+		
+        <!--正常部分-->
+        <div id="static-part">
+            <!--广告位-->
+            <a id="banner" href="">
+                <span class="tsc-logo"></span>
+                <span class="slogan"></span>
+                <em class="close"></em>
+                <span class="download">免费下载</span>
+            </a>
+
+            <!--所在位置-->
+            <h4 class="position"><a href="/">首页</a> &gt; <a href="">北京万事发汽车</a></h4>
+
+            <!--商家介绍-->
+            <input id="dealerId" type="hidden" value="306937">
+            <div class="shopHead">
+                <h3 class="shopName">北京万事发汽车</h3>
+                <p><span class="shopBrand">经纪公司</span></p>
+            </div>
+            <div id="shopContent">
+                <div class="shop-con1">
+                    <div class="shop-con1-left">
+                        <p class="shop-item"><span class="shop-item-left">主营品牌：</span><span class="shop-item-right">综合品牌</span></p>
+                        <p class="shop-item">
+                            <span class="shop-item-left">在售：</span><span class="shop-item-right"><i class="red">8</i>辆</span>
+                            <span class="shop-item-left">已售：</span><span class="shop-item-right"><i class="red">0</i>辆</span>
+                        </p>
+	                        <p class="shop-item">
+	                            <span class="shop-item-left">认证情况：</span>
+	                            
+	                            		<span class="shop-item-right"><span>身份</span><span>执照</span></span>
+	                            	
+	                        </p>
+                        <p class="shop-item"><span class="shop-item-left">营业时间：</span><span class="shop-item-right">上午9:00--下午5:00</span></p>
+                        <p class="shop-address"><span class="shop-item-left">公司地址：</span>
+                        	<span class="shop-item-right">
+                        		
+										花乡旧机动车交易市场D318号 
+									
+                        	</span>
+                        </p>
+                        <div class="shop-item">
+                            <!-- JiaThis Button BEGIN -->
+                            <div class="jiathis_style_24x24">
+                                <a class="jiathis_button_qzone"></a>
+                                <a class="jiathis_button_tsina"></a>
+                                <a class="jiathis_button_tqq"></a>
+                                <a class="jiathis_button_renren"></a>
+                            </div>
+                            <script type="text/javascript" >
+                                var jiathis_config={
+                                    siteNum:0,
+                                    summary:"",
+                                    boldNum:0,
+                                    shortUrl:false,
+                                    hideMore:true
+                                }
+                            </script>
+                            <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                        </div>
+                    </div>
+                    
+                    <div class="shop-con1-right">
+                        <a class="shop-pic">
+                        	
+                        			<img src="http://m4.auto.itc.cn/car/theme/2sc/dealer/images/dealerFinger.png" />
+                        		
+                            
+                        </a>
+                        
+                        <div class="shop-represent">
+                            <div class="shop-represent-left">
+                                <h4>销售代表</h4>
+                                <p class="shop-represent-name">刘先生</p>
+                            </div>
+                            <div class="shop-represent-right">
+                                <img src="http://m4.auto.itc.cn/car/theme/2sc/dealer/images/sale_defaulte.jpg" style="width:50px;height:76px;"/>
+                            </div>
+                        </div>
+                        <a class="shop-tel" href="">18600052785</a>
+                    </div>
+                </div>
+                <div class="shop-con2">
+                    <p class="shop-item">
+                        <span class="shop-item-left">公司承诺：</span>
+                        
+								无                        		
+                        	
+                    </p>
+                </div>
+            </div>
+			
+			
+            
+
+			
+
+            <!--车源tab-->
+            <div id="shop-cars">
+                <ul class="cars-nav">
+                    <li id="tabReco"><a href="#recommendCar">车源推荐</a></li>
+                    <li id="tabAll"><a href="#allCar">公司全部车源</a></li>
+                </ul>
+
+                <div id="recommendCar" class="tab-car">
+                    <ul class="tab-nav ui-tabs-nav">
+                        <li class="ui-state-active"><a id="recoDefa" href="javascript:void(0)">默认</a></li>
+                        <li><a id="recoPrice" href="javascript:void(0)">价格从低到高</a></li>
+                        <li><a id="recoMile" href="javascript:void(0)">里程从低到高</a></li>
+                    </ul>
+
+                    <div id="carList" class="car-list-box">
+                        <ul id="carListUl" class="carList">
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div id="allCar" class="tab-car">
+                    <ul class="tab-nav ui-tabs-nav">
+                        <li class="ui-state-active"><a id="allDefa" href="javascript:void(0)">默认</a></li>
+                        <li><a id="allPrice" href="javascript:void(0)">价格从低到高</a></li>
+                        <li><a id="allMile" href="javascript:void(0)">里程从低到高</a></li>
+                    </ul>
+
+                    <div id="carList2" class="car-list-box">
+                        <ul id="carListUl2" class="carList">
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--看车地址-->
+            <div id="shop-address">
+                <div class="head">
+                    <span class="title">看车地址</span>
+                    <a href="javascript:void(0);" class="readmore"></a>
+                </div>
+                <div id="shop-map">
+                </div>
+            </div>
+
+            <p class="tip">搜狐二手车提示您：车辆过户前请勿轻易给对方押金，订金，交易中请仔细检验车况，避免上当受骗。</p>
+
+            <!--工具-->
+            <div id="util">
+                <div class="head">
+                    <span class="title">工具</span>
+                </div>
+                <div class="util-list">
+                    <a class="util-item" href="">购买流程</a>
+                    <a class="util-item" href="">车险理赔</a>
+                    <a class="util-item" href="">评估询价</a>
+                    <a class="util-item" href="">砍价技巧</a>
+                    <a class="util-item" href="">购车注意</a>
+                    <a class="util-item" href="">购买流程</a>
+                    <a class="util-item" href="">违章查询</a>
+                    <a class="util-item" href="">识别泡水车</a>
+                </div>
+            </div>
+
+            <!--手机下载-->
+            <div id="phone-down">
+                <div class="head">
+                    <span class="title">手机下载</span>
+                </div>
+                <div class="down-content">
+                    <div class="down-left"></div>
+                    <div class="down-right">
+                        <h4>买卖二手车&nbsp;&nbsp;放心有保障</h4>
+                        <div class="down-icon">
+                            <a href="" class="iphone-down"></a>
+                            <a href="" class="android-down"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--底部-->
+			
+
+<div id="footer">
+<div class="bottom">
+    <a href="">首页-二手车</a>
+    <span id="suggestion">^-^提提意见哦！</span>
+</div>
+<div class="menu">
+    <ul class="clearfix">
+        <li class="current">触版</li>
+        <li><a id="2scweb" href="http://2sc.sohu.com/">PC版</a></li>
+        <li><a href="http://mobile.auto.sohu.com/mobile/download/getDetail.at?loadType=ershou">客户端</a></li>
+    </ul>
+</div>
+<p>Copyright 2014 Sohu.com</p>
+</div>
+        </div>
+
+        <!--意见弹出对话框-->
+        <div id="suggest-dialog" title="建议">
+            <input id="suggest-name" class="message-input" placeholder="请输入联系人--必填">
+            <input id="suggest-leaveSign" class="message-input" placeholder="请输入联系电话或邮箱--必填">
+            <textarea id="suggest-content" placeholder="请输入您的建议"></textarea>
+        </div>
+
+        <script type="text/javascript">
+			
+	
+				var mapSetting = {
+					'mapX' : '12946992.1875',
+					'mapY' : '4814585.9375',
+					'city' : '北京',
+					'title' : '北京万事发汽车'
+				};	
+				
+
+        </script>
+		<script type="text/javascript">window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=86835285.js?cdnversion='+~(-new Date()/36e5)];</script>
+    </body>
+</html>

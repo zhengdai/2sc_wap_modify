@@ -1,0 +1,222 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+	<!-- 设置全局品牌车型地区变量开始 -->
+	
+	
+	<!-- 设置全局品牌车型地区变量结束 -->
+<head>
+    <meta charset="gbk">
+    <title>搜狐二手车估价结果</title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta content="telephone=no" name="format-detection">
+    <link type="text/css" rel="stylesheet" href="style/common.css"/>
+    <link type="text/css" rel="stylesheet" href="http://m1.auto.itc.cn/car/theme/2sc/new_wap/style/wap_result.css"/>
+    <script type="text/javascript" src="gmu.mearge.js"></script>
+    <script type="text/javascript" src="http://m1.auto.itc.cn/car/theme/2sc/new_wap/js/mobileSohuBase.js"></script>
+    <script type="text/javascript" src="wap_result.js"></script>
+</head>
+<body>
+
+    <!--页面顶端引用开始-->
+    
+	
+
+
+
+
+
+
+
+
+
+<!--页面顶端碎片引用开始-->
+<div id="page-head">
+    <header>
+        <span class="logo"></span>
+        <a id="city" href="/jsp/wap/city.jsp">全国</a>
+        <div class="icons">
+            <a class="icon" id="home" href="/"></a>
+            <a class="icon" id="history"></a>
+            <a class="icon" id="search"></a>
+            <a class="icon" id="sellCar" href="/sell/add"></a>
+        </div>
+    </header>
+    <!--导航-->
+    <div id="nav_wrap">
+        <div id="nav">
+            <ul>
+                <li ><a href="http://m.2sc.sohu.com/-1--1/">首页</a></li>
+                <li ><a href="http://m.2sc.sohu.com/-1--1/buycar/">买车</a></li>
+                <li ><a href="http://m.2sc.sohu.com/-1--1/sell/add">卖车</a></li>
+                <li class="ui-state-active"><a href="http://m.2sc.sohu.com/-1--1/evaluation/">估车宝</a></li>
+                <li ><a href="#">认证车</a></li>
+                <li ><a href="#">买车2</a></li>
+                <li ><a href="#">卖车2</a></li>
+                <li ><a href="#">估车宝2</a></li>
+                <li ><a href="#">认证车2</a></li>
+                <li ><a href="#">赢在二手车</a></li>
+                <li ><a href="#">买卖攻略</a></li>
+                <li ><a href="#">教育</a></li>
+                <li ><a href="#">财经</a></li>
+                <li ><a href="#">房产</a></li>
+                <li ><a href="#">汽车</a></li>
+            </ul>
+        </div>
+        <a id="nav_arrow"><span>&gt;</span></a>
+    </div>
+</div>
+<!--搜索框-->
+        <div class="search-wrap">
+            <div class="search-box">
+                <div id="search-con">
+                    <p class="input-box">
+                        <input id="search-key" name="suggest" type="text" class="search-text" placeholder="请输入车型名称" autocomplete="off">
+                    </p>
+                    <a href="javascript:void(0);" class="search-btn" onclick="wapSearchSubmit();">搜索</a>
+                </div>
+                <div id="rsearch" style="display:none;" class="search-popdiv">
+                <ul>
+                </ul>
+            </div>
+                <div class="search-tips">
+                    <a target="_blank" href="">奥迪A6L</a>
+                    <a target="_blank" href="">宝马3系</a>
+                    <a target="_blank" href="">帕萨特</a>
+                    <a target="_blank" href="">POLO</a>
+                    <a target="_blank" href="">奥迪A4L</a>
+                </div>
+            </div>
+            <span class="search-ui-arrow"></span>
+        </div>
+
+        <!--历史框-->
+        <div class="history-wrap">
+            <div class="history-tabs">
+                <ul class="tabs-nav">
+                    <li><a href="#collect-record-wrap">收藏记录</a></li>
+                    <li><a href="#browsing-record-wrap">浏览记录</a></li>
+                </ul>
+                <span id="clearBtn"></span>
+                <span id="closeBtn"></span>
+                <div class="clear"></div>
+                <div id="collect-record-wrap">
+                    <div id="collect-record">
+                    	 <ul id="collect-record-list">
+                    	 	<li>
+                                <span class="record-tit">[车源]</span><a class="carItem" href=""></a><span class="carPrice"><i></i>万</span><span class="deleteBtn"></span>
+                            </li>
+                            <li>
+                                <span class="record-tit">[商家]</span><a class="shopItem" href=""></a><span class="deleteBtn"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="browsing-record-wrap">
+                    <div id="browsing-record">
+                        <ul id="browsing-record-list">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <span class="history-ui-arrow"></span>
+        </div>
+<script type="text/javascript">
+var pp = '-1';
+var cc = '-1';
+</script>        
+<script type="text/javascript" src="http://m1.auto.itc.cn/car/theme/2sc/new_wap/js/wap_search.js"></script>     
+<!-- <script type="text/javascript" src="http://127.0.0.1:8080/usedcarweb/js/wap_search.js"></script> -->
+	<!--页面顶端引用结束-->
+
+    <!--正常部分-->
+    <div id="static-part">
+        <!--广告位-->
+        <a id="banner" href="">
+            <span class="tsc-logo"></span>
+            <span class="slogan"></span>
+            <em class="close"></em>
+            <span class="download">免费下载</span>
+        </a>
+
+
+
+        <!--结果-->
+        <div id="result-car">
+            <div class="result-part">
+                <h2 id="carName"></h2>
+                <img id="carPic" src="" alt="" class="img-right" width="230px">
+                <div class="car-detail">
+                    <p class="text1"> 年月上牌，已行驶公里</p>
+                    <p class="text2"> 评估价约：<span class="orange-text"> </span><em>(估价仅供参考) </em></p>
+                    <p class="text2"> 买车裸车价：万元 + 万元<em>(购置税)</em></p>
+					<div id="estimate"></div>
+                    <div class="text3">
+                        <div class="btn-orange" onclick="javascript:window.location.href='/evaluation/';"><b>重新评估</b></div><a href="/sell/add" target="_blank">直接发布车源在搜狐二手车网进行寄售，卖高价</a></div>
+                </div>
+            </div>
+        </div>
+        <!--其他卖价-->
+        <div id="recommend-car">
+            <div class="head">
+                <span class="title">其他卖多少钱</span>
+                <span class="more"><a href="">&gt;</a></span>
+            </div>
+            <ul class="carList">
+            	
+            </ul>
+        </div>
+
+        <!--手机下载-->
+        <div id="phone-down">
+            <div class="head">
+                <span class="title">手机下载</span>
+            </div>
+            <div class="down-content">
+                <div class="down-left"></div>
+                <div class="down-right">
+                    <h4>买卖二手车&nbsp;&nbsp;放心有保障</h4>
+                    <div class="down-icon">
+                        <a href="" class="iphone-down"></a>
+                        <a href="" class="android-down"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--页面底端引用开始-->
+		
+
+<div id="footer">
+<div class="bottom">
+    <a href="">首页-二手车</a>
+    <span id="suggestion">^-^提提意见哦！</span>
+</div>
+<div class="menu">
+    <ul class="clearfix">
+        <li class="current">触版</li>
+        <li><a id="2scweb" href="http://2sc.sohu.com/">PC版</a></li>
+        <li><a href="http://mobile.auto.sohu.com/mobile/download/getDetail.at?loadType=ershou">客户端</a></li>
+    </ul>
+</div>
+<p>Copyright 2014 Sohu.com</p>
+</div>
+		<!--页面底端引用结束-->
+
+    </div>
+
+
+    <!--意见弹出对话框-->
+    <div id="suggest-dialog" title="建议">
+        <textarea id="suggest-content" placeholder="请输入您的建议"></textarea>
+    </div>
+
+</body>
+</html>

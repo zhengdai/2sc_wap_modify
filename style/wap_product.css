@@ -1,0 +1,298 @@
+body{padding-top:82px; }
+
+/*所在位置样式*/
+.position{ padding:0 10px; line-height: 30px;color: #999;}
+.position a{font-size:12px; padding: 0 5px 0 0; color: #999;}
+
+/*车详情样式*/
+.car-product{ overflow: hidden; border-bottom: 4px solid #000;}
+.car-product-con1{overflow: hidden; position: relative;}
+.car-product-con1-left{ margin-right: 80px; border-right: 1px solid #cecece; overflow: hidden;}
+.car-info-item{border-top: 1px solid #cecece; overflow: hidden; color: #999; font-size: 14px; line-height: 30px; padding: 0 3px;}
+.car-product-tit{ padding: 5px; }
+.car-pic{ display: block; left:5px; top:5px; width: 120px; height: 80px; position: absolute;}
+.car-pic img{ width: 100%; height: 100%;}
+.car-pic h4{ position: absolute; width: 100%; left: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5); text-align: center; color: #fff;}
+.car-tit-con{ height: 80px; overflow: hidden; margin-left: 125px;}
+.car-tit-con h4{ line-height: 28px; font-size: 16px; color: #000; max-height: 56px; overflow: hidden;}
+.car-tit-con p{ line-height: 24px; font-size: 14px; color: #999; height: 24px; overflow: hidden;}
+/*.car-product-slogan{height: 30px; overflow: hidden;}*/
+.car-info-item .right{ color: #000;}
+.car-info-item .end i{color: #f40;}
+.car-summary{ position: relative;}
+.car-summary .left{ display: block; position: absolute;}
+.car-summary .right{display: block; margin-left: 70px;}
+.car-summary .right span{ display: block; float: left; margin: 3px; padding: 0 3px;
+    background-color: #fff2ed; color: #ff4400; border: 1px solid #ff4400; line-height: 24px;
+}
+.car-product-con1-right{ position: absolute; width: 80px; right: 0; top:0;}
+.car-product-price{border-top: 5px solid #f40; padding: 1px 0 5px;}
+.car-price-tit{ text-align: left; line-height: 24px; font-size: 14px; margin-left: 5px;}
+.car-price-con{ text-align: center; line-height: 32px; font-size: 18px; color: #f40;}
+.car-price-con .right{ font-size: 14px;}
+.car-price-unit{ text-align: right; line-height: 24px; font-size: 14px; margin-right: 5px;}
+
+.car-product-btn{ border-top: 1px solid #cecece;}
+.car-product-btn .btn{ display: block; width: 70px; margin: 5px auto; text-align: center; color: #fff; line-height: 24px; background-color: #aaa;}
+.car-product-btn .active{ background-color: #f40;}
+.copyBtn{ background-color: #b6b6b6;}
+.shareBtn{background-color: #b6b6b6;}
+.report{ display:block; text-align: center; border-top:1px solid #cecece; line-height: 30px;}
+.report i{ background-color: #ff4400; color: #fff; padding: 0 5px; margin: 0 3px; font-style: normal;}
+.shop-promise{ position: relative;}
+.shop-promise .left{ display: block; position: absolute;}
+.shop-promise .right{display: block; margin-left: 70px;}
+.shop-promise .right span{ display: block; float: left; margin: 3px; padding: 0 5px;
+    background-color: #28960f; color: #fff;
+}
+
+/*product头样式*/
+.car-head{border-bottom: 1px solid #d3d3d3;  height: 34px; padding:0 10px; color: #000; background-color: #f7f7f7;}
+.car-head h4{line-height: 34px;font-size: 20px; overflow: hidden; height: 34px;}
+
+/*车况信息样式*/
+.car-detail-con{ overflow: hidden;}
+.car-detail-con li{ box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; width: 50%;
+    padding: 0 0 0 10px; float: left; line-height: 30px; border-bottom: 1px dotted #cecece;
+}
+.car-detail-con .left{ color: #999;}
+.car-detail-con .right{ color: #000;}
+
+/*车辆配置样式*/
+.car-config-con{ padding: 5px 10px; line-height: 24px; color: #999;}
+
+/*车况介绍样式*/
+.car-intro-con{padding: 5px 10px; line-height: 24px; color: #999;}
+
+/*商家店铺介绍样式*/
+.car-shop-con{ overflow:  hidden; margin: 5px; position: relative;}
+.shop-represent{ position: absolute; display: block; left: 0; top:0;}
+.shop-info{ margin-left: 85px;}
+.shop-info p{ font-size: 12px; line-height: 24px; color: #999;}
+.shop-link{ color: #fff; background-color: #00a0e9; font-size: 16px; border-radius: 10px; display: block; text-align: center; width: 120px; margin: 3px auto; line-height: 30px;}
+
+/*点评样式*/
+.car-comment-con{ overflow: hidden; margin: 5px;}
+.car-comment-con p{ color: #999;line-height: 24px; color: #999;}
+
+/*车源tab样式*/
+#recommend-cars{ overflow: hidden;}
+.cars-nav li{ float: left;width: 33.3%; box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;
+    border-bottom: 4px solid #000; border-left: 1px solid #bababa; text-align: center; line-height: 35px;
+    color: #000; font-size: 16px;
+}
+.cars-nav li.current-nav{border-bottom-color: #f40;}
+
+#recommend-cars .ui-tabs-content {
+    position: relative;
+    min-height: 100px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    overflow: hidden;
+    -webkit-transition: height 200ms ease-in-out;
+}
+.ui-tabs-content .ui-tabs-panel {
+    display: none;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    min-height: 100px;
+}
+.ui-tabs-panel {
+    -webkit-transform: translateZ(0);
+}
+.ui-tabs-content .ui-tabs-panel.ui-state-active, .ui-viewport-transitioning .ui-tabs-panel.out {
+    display: block;
+    z-index: 1;
+}
+.ui-tabs-content .ui-tabs-panel.ui-state-active {
+    z-index: 2;
+}
+
+#recommend-cars .ui-tabs-nav {
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    float: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-top: 1px solid #bababa;
+    background-color: #efefef;
+}
+#recommend-cars .ui-tabs-nav li {
+    margin-top:0;
+    border:none;
+    border-width: 0;
+    float:left;
+    background-color: #f4f4f4;
+    height: 35px;
+    white-space:nowrap;/*内容不换行*/
+    cursor: pointer;
+    width: 50%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-bottom: 4px solid #000;
+    border-left: 1px solid #bababa;
+    text-align: center; line-height: 35px;
+    color: #000; font-size: 16px;
+
+}
+#recommend-cars .ui-tabs-nav li.ui-state-active{
+	border-bottom-color:#f40;
+}
+#recommend-cars .ui-tabs-nav li a {
+    text-decoration: none;
+    color: #4a4a4a;
+
+}
+#recommend-cars .ui-tabs-nav li:last-child {
+    border-right-width: 0;
+}
+
+#recommend-cars .ui-tabs-nav li.ui-state-active a{
+    color: #f40;
+}
+#recommend-cars .ui-tabs-content {
+    border: none;
+}
+.ui-tabs-content .ui-tabs-panel {
+    padding: 0 5px;
+    border-top:1px #d4d4d4 solid;
+}
+.ui-tabs-content .ui-tabs-panel li{
+    line-height: 30px;
+    border-bottom:1px #d4d4d4 solid;
+    overflow: hidden;
+}
+.ui-tabs-content .ui-tabs-panel li.lastItem{
+    border-bottom: none;
+}
+
+.ui-tabs-panel .ui-loading {
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+.ui-tabs-panel .ui-load-error {
+    color: red;
+    text-align: center;
+}
+
+.car-item{ overflow: hidden; padding: 10px; border-bottom: 1px #c2c2c2 dotted;position: relative;}
+.car-item a{ display: block;overflow: hidden; position: relative;}
+.car-tit{font-size:18px; line-height: 30px; margin-right: 20px; height: 30px; overflow: hidden; color: #666;}
+.authentication{ position: absolute; top:15px; font-size: 12px; line-height: 20px;
+    background-color: #24ccb3; right: 10px; padding: 0 3px; border-radius: 6px; color: #fff;
+}
+.description{ position: relative; overflow: hidden; margin: 5px 0;}
+.left-des{ margin-right:80px; border-right:1px solid #999; }
+.promise{ font-size:14px; color: #ff926a; line-height: 28px; height: 28px; overflow: hidden;}
+.car-info{font-size:16px; color: #999; line-height: 28px; height: 28px; overflow: hidden;}
+.right-des{ position: absolute; top:0; right: 0; width: 75px; overflow: hidden;}
+.car-price{font-size:18px; color: #ff0000; line-height: 28px; height: 28px; overflow: hidden;}
+.release-date{font-size:16px; color: #999; line-height: 28px; height: 28px; overflow: hidden;}
+
+.see-more{ margin: 10px auto; text-align: center; border: 1px solid #999; width: 100px; line-height: 30px;}
+
+/*联系样式*/
+.contact{ overflow: hidden; background-color: #ff4400; position: fixed; bottom: 0; left: 0; width: 100%; z-index: 1000;}
+.contact-info{ margin-right: 80px; font-size:12px; line-height: 20px; color: #fff; padding: 5px;}
+.message {
+    display: block;
+    width: 40px;
+    position: absolute;
+    top:0;
+    right: 81px;
+    height: 100%;
+    background: url("../images/message.png") center no-repeat;
+}
+.call {
+    display: block;
+    width: 40px;
+    position: absolute;
+    top:0;
+    right: 41px;
+    height: 100%;
+    background: url("../images/call.png") center no-repeat;
+}
+.packup{ position: absolute; line-height: 50px; right: 0; text-align: center; display: block; top:0; border-left:1px solid #fff; height: 100%; overflow: hidden; color: #fff; width: 40px;}
+.contact-mark{ position: fixed; right: 0; bottom: 0; width: 50px; height: 50px; overflow: hidden; z-index: 1000;}
+.expansion{ position: absolute; height: 100px; width: 100px; line-height: 50px; display: block; color: #fff; border-radius: 50px; background-color: #f40; padding-left: 20px;}
+
+/*地图样式*/
+#shop-address{ background-color: #f7f7f7;}
+#shop-address .head{ position: relative;border-bottom:1px solid #b5b5b5;}
+#shop-map{width: 100%; height: 300px; display: none;}
+.readmore{ position: absolute; right: 10px; top: 0; height: 100%; width: 15px;
+    background-position: center; background-repeat: no-repeat;background-image: url("../images/small_r_arr.png");
+}
+.closemore{ background-image: url("../images/small_d_arr.png");}
+
+/*提示样式*/
+.tip{ padding: 0 0 0 20px; margin: 10px 5px; line-height: 24px; color: #ff4400; font-size: 14px;
+    background: url("../images/tip.png") left 3px no-repeat;
+}
+
+/*工具样式*/
+.util-list{ overflow: hidden; margin: 0 0 5px;}
+.util-item{ width: 25%; display: block; float: left; text-align: center; border-bottom: 1px #e0e0e0 solid;
+    border-right:1px #e0e0e0 solid;color: #999; font-size:16px; box-sizing: border-box;
+    -moz-box-sizing:border-box;-webkit-box-sizing: border-box;line-height: 34px;
+}
+.util-item:nth-child(4n){ border-right: none;}
+
+
+/*手机下载样式*/
+.down-content{ padding: 10px; overflow: hidden; border-bottom: 4px solid #000;}
+.down-left{ float:left; height: 60px; width: 25%;
+    background: url("../images/2sc_logo.png") center no-repeat;
+}
+.down-right{ float: left; height: 60px; width: 75%; overflow: hidden;}
+.down-right h4{ font-size: 16px; color: #999; line-height: 30px;}
+.down-icon{ overflow: hidden;}
+.iphone-down{ display: block; float: left; background:url("../images/iphone-down.png") center no-repeat;
+    margin: 0 10px;width: 65px; height: 30px;
+}
+.android-down{ display: block; float: left; background:url("../images/android-down.png") center no-repeat;
+    margin: 0 10px;width: 65px; height: 30px;
+}
+
+
+/*底部样式*/
+.bottom{ border-bottom: 1px solid #e0e0e0; overflow: hidden;}
+.bottom a{ float: left; display: block; line-height: 30px; color: #999; font-size: 16px; padding: 0 5px;}
+#suggestion{float:right; display: block; line-height: 30px; color: #fff;
+    padding: 0 5px; font-size:12px; background-color: #ff4400;
+}
+.menu ul {
+    display: inline-block;
+}
+.menu {
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #e0e0e0;
+}
+.menu li {
+    float: left;
+}
+.menu li a {
+    padding: 0 10px;
+    color: #3a85c8;
+}
+#footer p{
+    text-align: center;
+    line-height: 32px;
+    background-color: #f7f7f7;
+}
+
+.jiathis_style_24x24{ overflow: hidden;}
+.jiathis_style_24x24 a{ display: block; float: left; margin:3px 0 3px 9px;}

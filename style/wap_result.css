@@ -1,0 +1,68 @@
+body{padding-top:82px; }
+
+/*结果样式*/
+#result-car{ overflow: hidden; padding: 5px; background-color: #ecebeb;}
+.result-part{ background-color: #fff; overflow: hidden;}
+.result-part h2{text-align: center;
+    margin-top: 10px;
+    height: 50px;
+    border-bottom: 1px dotted #d0d0d0;
+    color: #444;
+    font-size: 18px;
+    line-height: 50px;
+    font-weight: 600;
+    font-family: "\5FAE\8F6F\96C5\9ED1";
+}
+#carPic {
+    display: block;
+    margin: 10px auto;
+}
+.car-detail {
+    margin: 10px auto;
+}
+.car-detail p {
+    line-height: 20px;
+    margin: 5px auto;
+    padding-left: 10px;
+    text-align: center;
+}
+.car-detail p .orange-text {
+    font: 18px '\5FAE\8F6F\96C5\9ED1';
+    color: #ff3900;
+    margin-left: 8px;
+}
+.text3{ overflow: hidden;}
+.btn-orange {
+    background-color: #ff4401;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+    padding: 0 15px;
+    line-height: 28px;
+    height: 28px;
+    display: block;
+    margin: 10px 30px;
+}
+.text3 a{
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    color: #076fa2;
+}
+
+/*车源样式*/
+
+.car-item{ overflow: hidden; padding: 10px; border-bottom: 1px #c2c2c2 dotted; position: relative;}
+.car-item a{ display: block;overflow: hidden; position: relative;}
+.car-tit{font-size:18px; line-height: 30px; margin-right: 20px; height: 30px; overflow: hidden; color: #666; display: block;}
+.authentication{ position: absolute; top:15px; font-size: 12px; line-height: 20px;
+    background-color: #24ccb3; right: 10px; padding: 0 3px; border-radius: 6px; color: #fff;
+}
+.description{ position: relative; overflow: hidden; margin: 5px 0;}
+.left-des{ margin-right:80px; border-right:1px solid #999; }
+.promise{ font-size:14px; color: #ff926a; line-height: 28px; height: 28px; overflow: hidden;}
+.car-info{font-size:16px; color: #999; line-height: 28px; height: 28px; overflow: hidden;}
+.right-des{ position: absolute; top:0; right: 0; width: 75px; overflow: hidden;}
+.car-price{font-size:18px; color: #ff0000; line-height: 28px; height: 28px; overflow: hidden;}
+.release-date{font-size:15px; color: #999; line-height: 28px; height: 28px; overflow: hidden;}

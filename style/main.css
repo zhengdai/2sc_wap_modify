@@ -1,0 +1,107 @@
+body{padding-top:82px; }
+
+/*新闻头图样式*/
+#news-slider{ overflow: hidden; background-color: #f5f5f5; position: relative;}
+.slider-item{ display: block; overflow: hidden; padding: 10px 10px 20px; box-sizing: border-box;
+    -moz-box-sizing:border-box;-webkit-box-sizing: border-box; position: relative; float: left;}
+.news-pic{ display: block; margin-right:100px;}
+.news-pic img{ width: 100%; height: auto; display: block;}
+.news-tit{ position: absolute; right: 10px; top:10px; width: 90px;white-space:normal;
+    font-size:20px; color: #121212; line-height: 30px; max-height: 90px; overflow: hidden;
+}
+.price{ position: absolute; right: 10px; top:110px; background: #ff0000;
+    color: #fff; line-height: 30px; font-size: 20px;border-radius: 5px;
+}
+.num{ padding: 0 3px; display: inline-block;}
+.unit{ background-color: #999999; padding:0 3px; line-height: 30px; display: inline-block;
+    border-top-right-radius: 5px;border-bottom-right-radius: 5px;
+}
+.ui-slider-group{ overflow: hidden; position: relative;white-space: nowrap;}
+
+.ui-slider-dots {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    padding: 0 6px;
+    text-align: right;
+}
+.ui-slider-dots > b {
+    display: inline-block;
+    margin: 0 4px;
+    width: 20px;
+    height: 6px;
+    background: #888;
+}
+
+.ui-slider-dots .ui-state-active {
+    background: #ff4412;
+}
+
+/*新闻列表样式*/
+.news{ overflow: hidden;}
+.news-item{ padding: 0 10px 0 20px; position: relative; border-bottom: 1px #c2c2c2 dotted; height: 34px; overflow: hidden;}
+.news-item::before{ content:""; display: block; position: absolute; top:14px; left: 7px;
+    width: 6px; height: 6px; border-radius: 3px; background-color: #b2b2b2;}
+.news-item a{ font-size:18px; color: #666; line-height: 34px; display: block;}
+.news-item a:active{ color: #ff4400;}
+
+
+/*热门关注样式*/
+#focusSlider{overflow: hidden; position: relative;}
+.focus-item{ overflow: hidden; padding: 10px 10px 20px; box-sizing: border-box;
+    -moz-box-sizing:border-box;-webkit-box-sizing: border-box;position: relative; float: left;}
+.focus-item a{ display: block; float: left; width: 25%; overflow: hidden;}
+.car-icon{ display: block; margin:5px auto 10px; }
+.car-name{ font-size:18px; line-height: 30px; text-align: center; color: #999;}
+
+#focusSlider .ui-slider-dots {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    text-align: center;
+    margin-left: -18px;
+    padding: 0;
+}
+
+#focusSlider .ui-slider-dots > b {
+    display: inline-block;
+    margin: 0 4px;
+    width: 10px;
+    height: 10px;
+    background: #888;
+    border-radius: 5px;
+}
+
+#focusSlider .ui-slider-dots .ui-state-active {
+    background: #ff4412;
+}
+
+
+/*车源推荐样式*/
+.car-item{ overflow: hidden; padding: 10px; border-bottom: 1px #c2c2c2 dotted; position: relative;}
+.car-item a{ display: block;overflow: hidden; position: relative;}
+.car-tit{font-size:18px; line-height: 30px; margin-right: 20px; height: 30px; overflow: hidden; color: #666; display: block;}
+.authentication{ position: absolute; top:15px; font-size: 12px; line-height: 20px;
+    background-color: #24ccb3; right: 10px; padding: 0 3px; border-radius: 6px; color: #fff;
+}
+.description{ position: relative; overflow: hidden; margin: 5px 0;}
+.left-des{ margin-right:80px; border-right:1px solid #999; }
+.promise{ font-size:14px; color: #ff926a; line-height: 28px; height: 28px; overflow: hidden;}
+.car-info{font-size:16px; color: #999; line-height: 28px; height: 28px; overflow: hidden;}
+.right-des{ position: absolute; top:0; right: 0; width: 75px; overflow: hidden;}
+.car-price{font-size:18px; color: #ff0000; line-height: 28px; height: 28px; overflow: hidden;}
+.release-date{font-size:16px; color: #999; line-height: 28px; height: 28px; overflow: hidden;}
+
+
+/*经销商推荐样式*/
+.shop-item{ overflow: hidden;padding: 10px; border-bottom: 1px #c2c2c2 dotted;}
+.shop-item a{ display: block; overflow: hidden; position: relative;}
+.shop-tit{font-size:18px; line-height: 30px;height: 30px; overflow: hidden; color: #666; display: block;}
+.shop-info{ overflow: hidden; position: relative;}
+.info-left{margin-right:80px;}
+.car-num{font-size:14px; color: #999; line-height: 22px; height: 22px; overflow: hidden;}
+.car-num span{color: #f00;}
+.shop-phone{font-size:16px; color: #666; line-height: 26px; height: 26px; overflow: hidden;}
+.info-right{ position: absolute; width: 80px; top:0; right: 0; height: 100%;}
+.message{ display: block; width: 50%; float: left; height: 100%; background: url("../images/message.png") center no-repeat;}
+.call{ display: block; width: 50%; float: left; height: 100%; background: url("../images/call.png") center no-repeat;}

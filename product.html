@@ -1,0 +1,497 @@
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="gbk">
+        <title>搜狐二手车车详情</title>
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta content="telephone=no" name="format-detection">
+        <link type="text/css" rel="stylesheet" href="style/common.css"/>
+        <link type="text/css" rel="stylesheet" href="style/wap_product.css"/>
+        <script type="text/javascript" src="http://m4.auto.itc.cn/car/theme/2sc/js/common.js"></script>
+        <script type="text/javascript" src="gmu.mearge.js"></script>
+        <script type="text/javascript" src="http://api.go2map.com/maps/js/api_v2.0.js"></script>
+        <script type="text/javascript" src="http://2sc.sohu.com/inc/inc/new/evaluate/evaluate_1693.js"></script>
+        <script type="text/javascript" src="wap_product.js"></script>
+    </head>
+    <body>
+        <!--页面顶端引用开始-->
+        
+        
+        
+        		
+
+
+
+
+
+
+
+
+
+<!--页面顶端碎片引用开始-->
+<div id="page-head">
+    <header>
+        <span class="logo"></span>
+        <a id="city" href="/jsp/wap/city.jsp">北京</a>
+        <div class="icons">
+            <a class="icon" id="home" href="/"></a>
+            <a class="icon" id="history"></a>
+            <a class="icon" id="search"></a>
+            <a class="icon" id="sellCar" href="/sell/add"></a>
+        </div>
+    </header>
+    <!--导航-->
+    <div id="nav_wrap">
+        <div id="nav">
+            <ul>
+                <li ><a href="http://m.2sc.sohu.com/bj/">首页</a></li>
+                <li class="ui-state-active"><a href="http://m.2sc.sohu.com/bj/buycar/">买车</a></li>
+                <li ><a href="http://m.2sc.sohu.com/bj/sell/add">卖车</a></li>
+                <li ><a href="http://m.2sc.sohu.com/bj/evaluation/">估车宝</a></li>
+                <li ><a href="#">认证车</a></li>
+                <li ><a href="#">买车2</a></li>
+                <li ><a href="#">卖车2</a></li>
+                <li ><a href="#">估车宝2</a></li>
+                <li ><a href="#">认证车2</a></li>
+                <li ><a href="#">赢在二手车</a></li>
+                <li ><a href="#">买卖攻略</a></li>
+                <li ><a href="#">教育</a></li>
+                <li ><a href="#">财经</a></li>
+                <li ><a href="#">房产</a></li>
+                <li ><a href="#">汽车</a></li>
+            </ul>
+        </div>
+        <a id="nav_arrow"><span>&gt;</span></a>
+    </div>
+</div>
+<!--搜索框-->
+        <div class="search-wrap">
+            <div class="search-box">
+                <div id="search-con">
+                    <p class="input-box">
+                        <input id="search-key" name="suggest" type="text" class="search-text" placeholder="请输入车型名称" autocomplete="off">
+                    </p>
+                    <a href="javascript:void(0);" class="search-btn" onclick="wapSearchSubmit();">搜索</a>
+                </div>
+                <div id="rsearch" style="display:none;" class="search-popdiv">
+                <ul>
+                </ul>
+            </div>
+                <div class="search-tips">
+                    <a target="_blank" href="">奥迪A6L</a>
+                    <a target="_blank" href="">宝马3系</a>
+                    <a target="_blank" href="">帕萨特</a>
+                    <a target="_blank" href="">POLO</a>
+                    <a target="_blank" href="">奥迪A4L</a>
+                </div>
+            </div>
+            <span class="search-ui-arrow"></span>
+        </div>
+
+        <!--历史框-->
+        <div class="history-wrap">
+            <div class="history-tabs">
+                <ul class="tabs-nav">
+                    <li><a href="#collect-record-wrap">收藏记录</a></li>
+                    <li><a href="#browsing-record-wrap">浏览记录</a></li>
+                </ul>
+                <span id="clearBtn"></span>
+                <span id="closeBtn"></span>
+                <div class="clear"></div>
+                <div id="collect-record-wrap">
+                    <div id="collect-record">
+                    	 <ul id="collect-record-list">
+                             <li>
+                                 <span class="record-tit">[车源]</span><a class="carItem" href=""></a><span class="carPrice"><i></i>万</span><span class="deleteBtn"></span>
+                             </li>
+                             <li>
+                                 <span class="record-tit">[商家]</span><a class="shopItem" href=""></a><span class="deleteBtn"></span>
+                             </li>
+                         </ul>
+                    </div>
+                </div>
+                <div id="browsing-record-wrap">
+                    <div id="browsing-record">
+                        <ul id="browsing-record-list">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <span class="history-ui-arrow"></span>
+        </div>
+<script type="text/javascript">
+var pp = 'bj';
+var cc = '';
+</script>        
+<script type="text/javascript" src="http://m1.auto.itc.cn/car/theme/2sc/new_wap/js/wap_search.js"></script>     
+<!-- <script type="text/javascript" src="http://127.0.0.1:8080/usedcarweb/js/wap_search.js"></script> -->
+        	
+		<!--页面顶端引用结束-->
+		
+        <!--正常部分-->
+        <div id="static-part">
+
+            <!--广告位-->
+            <a id="banner" href="">
+                <span class="tsc-logo"></span>
+                <span class="slogan"></span>
+                <em class="close"></em>
+                <span class="download">免费下载</span>
+            </a>
+
+            <!--所在位置-->
+            <h4 class="position"><a href="/bj/auto-bmw/">宝马</a> &gt; <a href="/bj/auto1-bmw7/">宝马7系</a></h4>
+
+            <!--车详情-->
+            <div class="car-product">
+            <input id="defaultCarId" value="722923" type="hidden">
+            <input id="defaultDealerId" value="306937" type="hidden">
+                <div class="car-product-con1">
+                    <div class="car-product-con1-left">
+                        <div class="car-product-tit car-info-item">
+                            <a class="car-pic" href="http://2sc.sohu.com/bj/photo/722923_5459668.shtml" target="_blank" title="宝马7系2008款730Li 经典版">
+                            	
+	                                <img src="http://auto.itc.cn/auto/1-auto3494914-6388321041401348303522_z90x60" />
+                            	
+                                <h4>共17张</h4>
+                            </a>
+                            <div class="car-tit-con">
+                                <h4>宝马7系2008款730Li 经典版</h4>
+                                <p>发布时间：2014-05-29</p>
+                            </div>
+                        </div>
+                        
+	                        <p class="car-product-slogan car-info-item">
+	                        	优惠口号：车况是根本，随时看车
+	                        </p>
+						
+                        
+							<p class="car-product-new car-info-item">
+	                            <span class="left">新车价：</span><span class="right">约 94.6万+8.08万(购置税)</span>
+	                        </p>
+						
+                        
+                        <p id="sameParamersDiv" class="car-product-section car-info-item">
+                        </p>
+                        <div class="car-summary car-info-item">
+                        <span class="left">
+                            	车型概述：
+                        </span>
+                            <div class="right">
+                                <span>2007年11月上牌</span>
+                                <span>
+                                	自动挡
+                                </span>
+                                <span>3.0L</span>
+                                <span>
+                                	
+										<td class="ph">已行驶17万公里</td>
+									
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="car-product-con1-right">
+                        <div class="car-product-price">
+                        	
+									
+											<p class="car-price-tit">预售：</p>
+										
+								
+							
+									<p class="car-price-con">
+										
+												<span class="left">36.</span>
+												<span class="right">0</span>
+											
+									</p>
+									<p class="car-price-unit">
+							                                万元
+							        </p>
+								
+                        </div>
+                        
+                        
+                        <div class="car-product-btn">
+                            <span id="collectBtn" class="btn">收藏此车</span>
+                            <!-- JiaThis Button BEGIN -->
+                            <div class="jiathis_style_24x24">
+                                <a class="jiathis_button_qzone" title="分享到QQ空间"><span class="jiathis_txt jtico jtico_qzone"></span></a>
+                                <a class="jiathis_button_tsina" title="分享到新浪微博"><span class="jiathis_txt jtico jtico_tsina"></span></a>
+                                <a class="jiathis_button_tqq" title="分享到腾讯微博"><span class="jiathis_txt jtico jtico_tqq"></span></a>
+                                <a class="jiathis_button_renren" title="分享到人人网"><span class="jiathis_txt jtico jtico_renren"></span></a>
+                            </div>
+                            <script type="text/javascript">
+                                var jiathis_config={
+                                    siteNum:0,
+                                    summary:"",
+                                    boldNum:0,
+                                    shortUrl:false,
+                                    hideMore:true
+                                }
+                            </script>
+                            <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                        </div>
+                        <span class="report"><i>!</i>举报</span>
+                    </div>
+                </div>
+                <div class="car-product-con2">
+                    <p class="car-product-slogan car-info-item">
+                        <span class="left">车所在地：</span>
+                        <span class="right">
+                        	
+                        			北京
+                        		
+                        </span>
+                    </p>
+                    
+                </div>
+            </div>
+
+            <!--车况信息-->
+            <div class="car-detail">
+                <div class="car-head">
+                    <h4>车况信息</h4>
+                </div>
+                <ul class="car-detail-con">
+                    <li><span class="left">车源所在地：</span><span class="right">北京</span></li>
+                    <li>
+                    	<span class="left">表显里程：</span>
+                    	<span class="right">
+                    		
+									<td class="ph">17万公里</td>
+								
+                    	</span>
+                    </li>
+                    <li><span class="left">排气量：</span><span class="right">3.0L</span></li>
+                    <li>
+                    	<span class="left">变速箱：</span>
+                    	<span class="right">
+                    		自动挡
+                    	</span>
+                    </li>
+                    <li>
+                    	<span class="left">是否一手车：</span>
+                    	<span class="right">
+                    		
+									是
+								
+                    	</span>
+                    </li>
+                    <li><span class="left">车身颜色：</span><span class="right">白色</span></li>
+                    <li><span class="left">首次上牌：</span><span class="right">2007年11月</span></li>
+                    <li><span class="left">使用性质：</span><span class="right">非营运</span></li>
+                    <li><span class="left">保险截止：</span><span class="right">2012年11月</span></li>
+                    <li><span class="left">年检截止：</span><span class="right">2013年11月</span></li>
+                </ul>
+            </div>
+
+            <!--车辆配置-->
+            
+
+            <!--车况介绍-->
+            <div class="car-intro">
+                <div class="car-head">
+                    <h4>车况介绍</h4>
+                </div>
+                <p class="car-intro-con">
+                	京牌个人私家车，车主特别爱惜，车况良好，绝不是大事故车泡水车，手续齐全，安心过户，实车拍照，本人拍照不专业，真车比照片好看，车辆性能来店看车体验，价格透明实惠。
+
+
+                </p>
+            </div>
+
+			
+	            <!--商家店铺介绍-->
+	            <div class="car-shop">
+	                <div class="car-head">
+	                    <h4>商家店铺介绍</h4>
+	                </div>
+	                <div class="car-shop-con">
+	                    <img class="shop-represent" src="http://m4.auto.itc.cn/car/theme/2sc/dealer/images/sale_defaulte.jpg" style="width:80px;height:121px"/>
+	                    <div class="shop-info">
+	                        <p>营业时间：上午9:00--下午5:00</p>
+	                        <p>公司地址：
+	                        	
+										花乡旧机动车交易市场D318号 
+									
+	                        </p>
+	                        <p>销售代表：刘先生</p>
+	                        <p>电话：18600052785</p>
+	                        <a href="/dealer/306937/" class="shop-link">查看商家店铺</a>
+	                    </div>
+	                </div>
+	            </div>
+	        
+
+            <!--点评-->
+            <div class="car-comment">
+                <div class="car-head">
+                    <h4>宝马7系2008款730Li 经典版</h4>
+                </div>
+                <div class="car-comment-con">
+                </div>
+            </div>
+
+            <!--看车地址-->
+            <div id="shop-address">
+                <div class="head">
+                    <span class="title">看车地址</span>
+                    <a href="javascript:void(0);" class="readmore"></a>
+                </div>
+                <div id="shop-map">
+                </div>
+            </div>
+
+            <p class="tip">搜狐二手车提示您：车辆过户前请勿轻易给对方押金，订金，交易中请仔细检验车况，避免上当受骗。</p>
+
+            <!--车源tab栏-->
+            <div id="recommend-cars">
+                <ul class="tab-nav">
+                    <li><a href="#carList1">同价位推荐</a></li>
+                    <li><a href="#carList3">同系车型</a></li>
+                </ul>
+
+                <ul class="carList" id="carList1">
+                   
+                </ul>
+
+                <ul class="carList" id="carList3">
+                    
+                </ul>
+
+            </div>
+
+            <!--工具-->
+            <div id="util">
+                <div class="head">
+                    <span class="title">工具</span>
+                </div>
+                <div class="util-list">
+                    <a class="util-item" href="">购买流程</a>
+                    <a class="util-item" href="">车险理赔</a>
+                    <a class="util-item" href="">评估询价</a>
+                    <a class="util-item" href="">砍价技巧</a>
+                    <a class="util-item" href="">购车注意</a>
+                    <a class="util-item" href="">购买流程</a>
+                    <a class="util-item" href="">违章查询</a>
+                    <a class="util-item" href="">识别泡水车</a>
+                </div>
+            </div>
+
+            <!--手机下载-->
+            <div id="phone-down">
+                <div class="head">
+                    <span class="title">手机下载</span>
+                </div>
+                <div class="down-content">
+                    <div class="down-left"></div>
+                    <div class="down-right">
+                        <h4>买卖二手车&nbsp;&nbsp;放心有保障</h4>
+                        <div class="down-icon">
+                            <a href="" class="iphone-down"></a>
+                            <a href="" class="android-down"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--底部-->
+            
+
+<div id="footer">
+<div class="bottom">
+    <a href="">首页-二手车</a>
+    <span id="suggestion">^-^提提意见哦！</span>
+</div>
+<div class="menu">
+    <ul class="clearfix">
+        <li class="current">触版</li>
+        <li><a id="2scweb" href="http://2sc.sohu.com/">PC版</a></li>
+        <li><a href="http://mobile.auto.sohu.com/mobile/download/getDetail.at?loadType=ershou">客户端</a></li>
+    </ul>
+</div>
+<p>Copyright 2014 Sohu.com</p>
+</div>
+
+        </div>
+
+        <!--联系-->
+        <div class="contact-mark" style="display: none" id="openLinkInfo">
+            <a href="javascript:void(0)" onclick="closeLinkInfo(2);" class="expansion">展开</a>
+        </div>
+        <div class="contact" id="LinkInfo">
+            <div class="contact-info">
+                <p class="contact-name">
+                    联系人：刘先生
+                </p>
+                <p class="contact-phone">
+                    联系电话 : 18600052785
+                </p>
+            </div>
+            <a class="message"></a>
+            <a class="call" href="tel:13764567708"></a>
+            <a href="javascript:;"  onclick="closeLinkInfo(1);" class="packup">收起</a>
+        </div>
+
+        <!--意见弹出对话框-->
+        <div id="suggest-dialog" title="建议">
+            <input id="suggest-name" class="message-input" placeholder="请输入联系人--必填">
+            <input id="suggest-leaveSign" class="message-input" placeholder="请输入联系电话或邮箱--必填">
+            <textarea id="suggest-content" placeholder="请输入您的建议"></textarea>
+        </div>
+
+        <!--留言弹出对话框-->
+        <div id="message-dialog">
+            <input id="message-name" class="message-input" placeholder="请输入姓名--必填">
+            <input id="message-phone" class="message-input" placeholder="请输入联系电话--必填">
+            <textarea id="message-content" placeholder="请输入您的留言"></textarea>
+        </div>
+
+        <!--举报对话框-->
+        <div id="report-dialog" title="举报">
+            <select id="accuSel" name="accusationSel" autocomplete="off">
+                <option value="-1">-请选择-</option>
+                <option value="0">车型不符</option>
+                <option value="1">此车已售</option>
+                <option value="2">商家承诺不实</option>
+                <option value="3">价格过低  </option>
+                <option value="4">无法过户</option>
+                <option value="5">需要定金</option>
+                <option value="6">联系不上</option>
+                <option value="7">其他</option>
+            </select>
+            <input id="accuPhone" class="message-input" placeholder="请输入联系电话--必填">
+            <textarea id="report-content" placeholder="请输入您的举报说明"></textarea>
+        </div>
+
+
+
+        <script type="text/javascript">
+        	
+	
+				var mapSetting = {
+					'mapX' : '12946992.1875',
+					'mapY' : '4814585.9375',
+					'city' : '北京',
+					'title' : '北京万事发汽车'
+				};	
+				
+        	initSameDisplayCars('722923');
+        	sameParameters('722923');
+        </script>
+		<script type="text/javascript">window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=86835285.js?cdnversion='+~(-new Date()/36e5)];</script>
+    </body>
+</html>

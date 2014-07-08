@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/gmu.mearge.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/main.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/style/buycar.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/style/common.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/style/main.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/style/wap_dealer.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/style/wap_evaluate.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/style/wap_product.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/style/wap_result.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/style/wap_sell.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/wap_buycar.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/wap_dealer.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/wap_evaluate.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/wap_product.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/wap_result.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/wap_sell.js" charset="GBK" />
+  </component>
+</project>
+
